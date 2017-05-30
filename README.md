@@ -27,9 +27,37 @@
 <script src="http://tinyjs.net/libs/tiny.debug.js"></script>
 ```
 ``` js
-require('@tinyjs/tinyjs-plugin-dust');
+var Dust = require('@tinyjs/tinyjs-plugin-dust');
 // 或者
 // import Dust from '@tinyjs/tinyjs-plugin-dust';
+
+// 新建 APP
+var app = new Tiny.Application({
+  width: 320,
+  height: 320
+});
+// 创建容器
+var container = new Tiny.Container();
+// 初始化
+var dust = new Tiny.Dust(x, y, function () {
+    return new Tiny.Sprite.fromImage('https://zos.alipayobjects.com/rmsportal/KKKOcfaEECkqrXFOBYIa.png')
+  }, container,
+  {
+    number: 50,
+    gravity: 0.1,
+    randomSpacing: true,
+    minAngle: 0, maxAngle: 6.28,
+    minSize: 12, maxSize: 24,
+    minSpeed: 1, maxSpeed: 2,
+    minScaleSpeed: 0.005, maxScaleSpeed: 0.01,
+    minAlphaSpeed: 0.005, maxAlphaSpeed: 0.01,
+    minRotationSpeed: 0.05, maxRotationSpeed: 0.1
+  });
+
+app.run(container);
+app.onUpdate(function () {
+  dust && dust.update();
+});
 ```
 
 ## 依赖
