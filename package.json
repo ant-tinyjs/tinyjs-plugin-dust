@@ -1,6 +1,6 @@
 {
-  "name": "@tinyjs/tinyjs-plugin-dust",
-  "version": "0.0.1",
+  "name": "tinyjs-plugin-dust",
+  "version": "0.0.2",
   "author": "fangjun.yfj",
   "description": "Dust is a quick and easy particle effects engine",
   "keywords": [
