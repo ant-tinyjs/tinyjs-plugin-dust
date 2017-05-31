@@ -1,5 +1,5 @@
 /**
- * @file        The Tiny.js plugin
+ * @file        Dust is a quick and easy particle effects engine
  * @author      fangjun.yfj
  */
 
