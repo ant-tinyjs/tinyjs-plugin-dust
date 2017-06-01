@@ -1,6 +1,6 @@
 {
   "name": "tinyjs-plugin-dust",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "fangjun.yfj",
   "description": "Dust is a quick and easy particle effects engine",
   "keywords": [
@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@gitlab.alipay-inc.com:tiny-plugin/tinyjs-plugin-dust.git"
+    "url": "git@gitlab.alipay-inc.com:tiny-plugins/tinyjs-plugin-dust.git"
   },
   "main": "src/index.js",
   "files": [
