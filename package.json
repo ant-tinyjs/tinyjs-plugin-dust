@@ -1,6 +1,6 @@
 {
   "name": "tinyjs-plugin-dust",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "author": "fangjun.yfj",
   "description": "Dust is a quick and easy particle effects engine",
   "keywords": [
@@ -11,8 +11,9 @@
     "type": "git",
     "url": "https://github.com/ant-tinyjs/tinyjs-plugin-dust.git"
   },
-  "main": "src/index.js",
+  "main": "dist/index.debug.js",
   "files": [
+    "dist",
     "src",
     "demo",
     "tests"
@@ -26,7 +27,8 @@
     "test-cov": "istanbul cover _mocha -- ./tests --recursive --require ./tests/setup.js",
     "ci": "npm run lint && npm run test-cov",
     "preversion": "npm run ci",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "prepublish": "npm run ci && npm run build"
   },
   "license": "MIT",
   "devDependencies": {
