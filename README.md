@@ -39,7 +39,7 @@ var app = new Tiny.Application({
 // 创建容器
 var container = new Tiny.Container();
 // 初始化
-var dust = new Dust(x, y, function () {
+var dust = new Dust(100, 100, function () {
     return new Tiny.Sprite.fromImage('https://zos.alipayobjects.com/rmsportal/KKKOcfaEECkqrXFOBYIa.png')
   }, container,
   {
