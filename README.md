@@ -4,7 +4,7 @@
 
 ## 查看demo
 
-http://tinyjs.net/#/plugins/tinyjs-plugin-dust/demo
+http://tinyjs.net/plugins/tinyjs-plugin-dust.html#demo
 
 ## 引用方法
 
@@ -61,8 +61,8 @@ app.onUpdate(function () {
 ```
 
 ## 依赖
-- `Tiny.js`: [Link](http://tinyjs.net/#/docs/api)
+- `Tiny.js`: [Link](http://tinyjs.net/api)
 
 ## API文档
 
-http://tinyjs.net/#/plugins/tinyjs-plugin-dust/docs
+http://tinyjs.net/plugins/tinyjs-plugin-dust.html#docs
