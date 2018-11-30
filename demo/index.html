@@ -13,8 +13,8 @@ html, body, p, div {margin:0;padding:0;}
 </head>
 <body>
 
-<script src="https://gw.alipayobjects.com/as/g/tiny/tiny/1.1.7/tiny.js"></script>
-<script src="../dist/index.js"></script>
+<script src="https://gw.alipayobjects.com/as/g/tiny/tiny/1.2.0/tiny.js"></script>
+<script src="../dist/index.debug.js"></script>
 
 <script type="text/javascript">
   // 新建 App
@@ -53,7 +53,7 @@ html, body, p, div {margin:0;padding:0;}
 
   function createDust (x, y) {
     dust = new Tiny.Dust(x, y, function () {
-        return Tiny.Sprite.fromImage('https://zos.alipayobjects.com/rmsportal/KKKOcfaEECkqrXFOBYIa.png')
+        return Tiny.Sprite.fromImage('https://gw.alipayobjects.com/as/g/tiny/resources/1.0.0/images/heart.png')
       }, container,
       {
         number: 50,

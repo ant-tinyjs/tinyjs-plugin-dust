@@ -88,7 +88,7 @@ class Dust {
     }
 
     //Make a particle for each angle
-    this.angles.forEach(function (angle) {
+    this.angles.forEach(function(angle) {
       return self.makeParticle(angle);
     });
   }
@@ -140,7 +140,7 @@ class Dust {
 
     //The particle's `updateParticle` method is called on each frame of the
     //game loop
-    particle.updateParticle = function () {
+    particle.updateParticle = function() {
       //Add gravity
       particle.vy += gravity;
 

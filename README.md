@@ -14,8 +14,8 @@ http://tinyjs.net/plugins/tinyjs-plugin-dust.html#demo
 
 - 也可以直接引用线上cdn地址，注意要使用最新的版本号，例如：
 
-  - https://gw.alipayobjects.com/as/g/tiny-plugins/tinyjs-plugin-dust/0.0.6/index.js
-  - https://gw.alipayobjects.com/as/g/tiny-plugins/tinyjs-plugin-dust/0.0.6/index.debug.js
+  - https://gw.alipayobjects.com/as/g/tiny-plugins/tinyjs-plugin-dust/0.1.0/index.js
+  - https://gw.alipayobjects.com/as/g/tiny-plugins/tinyjs-plugin-dust/0.1.0/index.debug.js
 
 ## 起步
 首先当然是要引入，推荐`NPM`方式，当然你也可以使用`CDN`或下载独立版本，先从几个例子入手吧！
@@ -24,7 +24,7 @@ http://tinyjs.net/plugins/tinyjs-plugin-dust.html#demo
 
 引用 Tiny.js 源码
 ``` html
-<script src="https://gw.alipayobjects.com/as/g/tiny/tiny/1.1.7/tiny.js"></script>
+<script src="https://gw.alipayobjects.com/as/g/tiny/tiny/1.2.0/tiny.js"></script>
 ```
 ``` js
 var Dust = require('tinyjs-plugin-dust');
@@ -40,7 +40,7 @@ var app = new Tiny.Application({
 var container = new Tiny.Container();
 // 初始化
 var dust = new Dust(100, 100, function () {
-    return new Tiny.Sprite.fromImage('https://zos.alipayobjects.com/rmsportal/KKKOcfaEECkqrXFOBYIa.png')
+    return new Tiny.Sprite.fromImage('https://gw.alipayobjects.com/as/g/tiny/resources/1.0.0/images/heart.png')
   }, container,
   {
     number: 50,
