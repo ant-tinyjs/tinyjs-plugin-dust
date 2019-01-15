@@ -1,6 +1,13 @@
 /**
- * @file        Dust is a quick and easy particle effects engine
- * @author      fangjun.yfj
+ * Dust - The TinyJS plugin
+ *
+ * Copy to https://github.com/kittykatattack/dust
+ * Some code (c) 2017 kittykatattack
+ *
+ * @name        tinyjs-plugin-dust
+ * @overview    Dust is a quick and easy particle effects engine
+ * @author      yiiqii
+ * @license     MIT
  */
 
 /**
