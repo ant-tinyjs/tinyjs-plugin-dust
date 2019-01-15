@@ -17,9 +17,9 @@ const banner = `/*!
  * Version: v${pkg.version}
  */
 // AppX: adapter for the alipay mini program
-try {
-var Tiny = Tiny || my.Tiny;
-} catch (e) {}
+var my = my || {};
+var window = window || this || my.window;
+var Tiny = window.Tiny || my.Tiny;
 `;
 
 const config = {
