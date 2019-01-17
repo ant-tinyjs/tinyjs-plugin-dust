@@ -9,24 +9,25 @@ import progress from 'rollup-plugin-progress';
 const pkg = require('./package.json');
 
 const production = process.env.BUILD === 'production';
-const file = production ? `index.js` : `index.debug.js`;
+const cjs = process.env.BUILD === 'cjs';
+const file = production ? `index.js` : (cjs ? `main.js` : `index.debug.js`);
+const format = cjs ? 'cjs' : 'umd';
 const banner = `/*!
  * Name: ${pkg.name}
  * Description: ${pkg.description}
  * Author: ${pkg.author}
  * Version: v${pkg.version}
  */
+${cjs ? `
 // AppX: adapter for the alipay mini program
-var my = my || {};
-var window = window || this || my.window;
-var Tiny = window.Tiny || my.Tiny;
-`;
+var Tiny = Tiny || my.Tiny;
+` : ''}`;
 
 const config = {
   input: 'src/index.js',
   output: {
     file,
-    format: 'umd',
+    format,
     name: 'Tiny.Dust',
     banner,
   },
