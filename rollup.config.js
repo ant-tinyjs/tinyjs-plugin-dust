@@ -20,7 +20,10 @@ const banner = `/*!
  */
 ${cjs ? `
 // AppX: adapter for the alipay mini program
-var Tiny = Tiny || my.Tiny;
+var my = my || {};
+window = window || my.window;
+var Tiny = my.Tiny;
+Tiny = Tiny || window.Tiny;
 ` : ''}`;
 
 const config = {
