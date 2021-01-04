@@ -1,6 +1,6 @@
 {
   "name": "tinyjs-plugin-dust",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "yiiqii",
   "description": "Dust is a quick and easy particle effects engine",
   "keywords": [
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "https://github.com/ant-tinyjs/tinyjs-plugin-dust.git"
   },
-  "main": "main.js",
+  "main": "index.debug.js",
   "files": [
     "index.js",
     "index.debug.js",
